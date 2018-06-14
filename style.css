@@ -1,0 +1,248 @@
+
+/*** STYLE INFORMATION: GENERAL CUSTOMIZATIONS ***/
+/** stylesheet template by Aaron Mann **/
+/* UPDATED: 14 June 2018 */
+
+
+/* * FORMS HTML * */
+
+button {
+	background-color: #00CC00;
+	border: 1px solid #8B8;
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline;
+	font-weight: bold;
+	margin: 1px;
+	margin-top: 6px;
+	padding: 0px 3px 0px 3px;
+	text-align: center;
+}
+
+button:hover {
+	background-color: #00FF00;
+	border: 1px solid #4B4;
+	color: #040;
+	font-weight: bold;
+}
+
+fieldset {
+	background-color: #EEF;
+	border: 1px solid #BCBDEF;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	color: #FF0000;
+	font-weight: bold;
+	margin: 8px 0px 10px 0px;
+	padding: 5px 5px 8px 5px;
+}
+
+form { 
+	border: 0px solid #DDD;
+	cursor: default;
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+	text-align: left;
+}
+
+input {
+	background-color: #FFFFFF;
+	border: 1px solid #3366CC;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	color: #000000;
+	font-size: 14px;
+	padding: 0px 2px 2px 4px;
+	margin: 1px 2px 2px 2px;
+}
+
+label {
+	color: #000000;
+	margin-right: 2px;
+}
+
+legend {
+	background-color: #EEF;
+	border: 1px solid #BCBDEF;
+	border-bottom: 0px solid #BCBDEF;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	color: #0000FF;
+	font-size: 20px;
+	font-weight: bold;
+	height: 24px;
+	margin: 6px 0px 16px 12px;
+	padding: 0px 10px 4px 10px;
+	text-decoration: none;
+}
+
+optgroup {
+}
+
+option {
+}
+
+select {
+	background-color: #FFFFFF;
+	border: 1px solid #3366CC;
+	color: #000000;
+	cursor: pointer;
+	padding: 0px 2px 2px 2px;
+	margin: 1px 0px 0px 0px;
+}
+
+textarea {
+	background-color: #FFFFFF;
+	border: 1px solid #3366CC;
+	color: #000000;
+	padding: 0px 2px 2px 2px;
+	margin: 1px 2px 4px 2px;
+}
+
+input:hover, textarea:hover {
+	border: 1px solid #FA4;
+}
+
+input:focus {
+	border: 1px solid #0F0;
+	font-size: 16px;
+	padding: 1px 2px 4px 4px;
+}
+
+textarea:focus {
+	border: 1px solid #0F0;
+}
+
+
+/*** FORM ELEMENTS (DIVs) ***/
+
+div.form_element {
+	background-color: #DDF;
+	border: 1px solid #BBE;
+	margin: 1px 1px 1px 1px;
+	padding: 1px 2px 2px 4px;
+}
+
+div.form_element:hover {
+	background-color: #EEF;
+	border: 1px solid #EEF;
+	border-bottom: 1px solid #FFF;
+	border-top: 1px solid #FFF;
+	border-left: 1px solid #66F;
+	cursor: default;
+}
+
+.form_element_title {
+}
+
+.form_element_item {
+}
+
+.form_element_follow {
+	color: #000;
+	font-weight: normal;
+	margin-left: 4px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 0px;
+}
+
+
+/*** FORM BUTTONS ***/
+
+.cancel {
+	background-color: #CCCC44;
+	border: 1px solid #B80;
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+	color: #000000;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 2px;
+	overflow: visible;
+	text-align: center;
+	width: 80px;
+}
+
+.cancel:hover {
+	background-color: #FFFF00;
+	border: 1px solid #DD0;
+	color: #FF0000;
+	font-weight: bold;
+}
+
+.reset {
+	background-color: #B00;
+	border: 1px solid #BB0000;
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 2px;
+	overflow: visible;
+	text-align: center;
+	width: 80px;
+}
+
+.reset:hover {
+	background-color: #FF0000;
+	color: #400;
+	border: 1px solid #E00;
+	font-weight: bold;
+}
+
+.send, .submit, .save, .edit {
+	background-color: #00CC00;
+	border: 1px solid #888;
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 2px;
+	margin-top: 2px;
+	overflow: visible;
+	text-align: center;
+	width: 80px;
+}
+
+.send:hover, .submit:hover, .save:hover, .edit:hover {
+	background-color: #00FF00;
+	border: 1px solid #4B4;
+	color: #040;
+	font-weight: bold;
+}
+
+.submit_disabled {
+	background-color: #666;
+	border: 1px solid #888;
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-weight: bold;
+	margin: 2px;
+	margin-top: 10px;
+	overflow: visible;
+	text-align: center;
+	width: 80px;
+}
+
+.submit_disabled:hover {
+	background-color: #666;
+	border: 1px solid #888;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.radio { /* this removes square borders from radio buttons if you put a border around <inputs */
+	border: 0px;
+	cursor: pointer;
+}
+
