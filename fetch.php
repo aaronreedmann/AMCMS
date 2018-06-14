@@ -29,10 +29,10 @@ class Fetch_Data {
 	public function __construct( $settings, $data ) {
 
 		//- import page and filing settings
-		global $Page_Settings;
+//		global $Page_Settings;
 		global $Filing_Settings;
-		global $Site_Set;
-		global $Base;
+//		global $Site_Set;
+//		global $Base;
 		global $n;
 
 		//- import form settings and post data
@@ -42,7 +42,7 @@ class Fetch_Data {
 		//- check for file upload and handle them
 		if( isset($_FILES) and count($_FILES) > 0 and isset($Filing_Settings) ) 
 			$Fetch_Files = new Fetch_Files($Filing_Settings,$_FILES);
-
+/*
 		//- check for recaptcha usage
 		$Temp['recap_filename'] = $Base.'mods/recaptcha/recaptchalib.php';
 		if( isset($this->Setting['option']['use_recaptcha']) 
@@ -67,9 +67,9 @@ class Fetch_Data {
 			}
 
 		}
-
+*/
 		//- check for safe pass, will only be set to zero (fail) upon recaptcha being active and returning an incorrect match
-		if( $this->safe_pass === 1 ) {
+//		if( $this->safe_pass === 1 ) {
 
 			//- cycle elements, check settings, filter each input as requested:
 			foreach( $this->Input as $k => $v ) {
@@ -90,17 +90,17 @@ class Fetch_Data {
 				if( isset($this->Setting['option']['stop_xss']) and $this->Setting['option']['stop_xss'] === true ) {
 
 					//- make sure definition file exists
-					if( file_exists($Base.'js_attribs.php') ) {
+					if( file_exists('js_attribs.php') ) {
 						//- include javascript attribute definitions
-						include $Base.'js_attribs.php';
+						include 'js_attribs.php';
 						//- strip javascript attributes
 						$v = str_ireplace($js_DefAttributes, "", $v);
 					} 
 
 					//- make sure definition file exists
-					if( file_exists($Base.'script_types.php') ) {
+					if( file_exists('script_types.php') ) {
 						//- include javascript attribute definitions
-						include $Base.'script_types.php';
+						include 'script_types.php';
 						//- strip javascript attributes
 						$v = str_ireplace($Def_ScriptTypes, "", $v);
 					} 
@@ -147,10 +147,10 @@ class Fetch_Data {
 
 			} //- END: foreach
 
-		} //- END: if safe_pass check
+//		} //- END: if safe_pass check
 
 		//- - - - - - - - - - - - - - - - - - - - - - - -
-
+/*
 		//- redirect, if set
 		if( isset($this->Setting['option']['redirect']) 
 		and strlen($this->Setting['option']['redirect']) > 0 
@@ -162,17 +162,17 @@ class Fetch_Data {
 			} else {
 				//- page_gen not being used, redirect a different way
 
-				/*
-				if( !headers_sent() ) {
-				header('Location: http://www.example.com/');
-				exit;
-				}
-				*/
+				
+//				if( !headers_sent() ) {
+//				header('Location: http://www.example.com/');
+//				exit;
+//				}
+				
 
 			}
 
 		} //- END: redirect
-
+*/
 		//- check for email op
 		if( isset($this->Setting['option']['send_mail']) 
 		and $this->Setting['option']['send_mail'] != 0 ) {
