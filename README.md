@@ -4,7 +4,7 @@ The AMCMS repository contains the components, object classes, modules and other 
 AMCMS was started back in 2007 and has become a really big project. I work on it alone so it came together slowly.
 
 In 2013 I was diagnosed with cancer and AMCMS was put on hold while I did treatment. It really hasn't been worked on since.
-To put it into perspective, AMCMS was written in PHP 5. I am now cured of cancer and ready to get back to work on my code.
+To put it into perspective, AMCMS was written in PHP 4. I am now cured of cancer and ready to get back to work on my code.
 
 AMCMS is cool, it takes a lot of the hard work out of making a web site, but it's so old now that it really needs to be gone over and rewritten. The old code can serve as a foundation to build exciting new features on. The core needs rewritten to PHP 7 standards but some of the old code was clever and can be copied over to the new system to save some time in developing it.
 
